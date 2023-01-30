@@ -7,7 +7,7 @@ import { BrowserRouter, Routes, Route,useNavigate } from 'react-router-dom';
 
 function App() {
 
-  let [formData, setFormData] = useState({select1:'1',breed:'1'});
+  let [formData, setFormData] = useState({});
 
   const data = (formData) => {
     console.log(formData);

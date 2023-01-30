@@ -1,9 +1,13 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom';
 import styles from './result.module.css';
 
 
 export default ({formData}) => {
-
+    let navigate = useNavigate()
+        if(!formData){
+            navigate('/')
+        }
     console.log(formData);
     
 return <>
