@@ -1,25 +1,27 @@
 import logo from './logo.svg';
+import { useState } from 'react';
 import './App.css';
+import PostAd from './components/post Ad/post_ad';
+import Result from './components/result/result';
+import { BrowserRouter, Routes, Route,useNavigate } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+  let [formData, setFormData] = useState({select1:'1',breed:'1'});
+
+  const data = (formData) => {
+    console.log(formData);
+    setFormData(formData);
+  }
+  return <>
+
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element = {<PostAd data={data} />} />
+        <Route path="/result" element ={<Result formData={formData} />} />
+      </Routes>
+    </BrowserRouter>
+  </>
 }
 
 export default App;
