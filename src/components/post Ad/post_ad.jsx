@@ -25,7 +25,7 @@ export default ({ data }) => {
           </div>
           <div className="col-md-6 text-center">
             <div class="form-floating mb-3">
-              <input {...form.register("breed")} type="text" className="form-control" placeholder="Breed" />
+              <input {...form.register("breed")} required type="text" className="form-control" placeholder="Breed" />
               <label for="floatingInput">Breed</label>
             </div>
           </div>
@@ -42,7 +42,7 @@ export default ({ data }) => {
           </div>
           <div className="col-md-6 text-center">
             <div class="form-floating mb-3">
-              <input {...form.register("age")} type="text" className="form-control" placeholder="Age" />
+              <input {...form.register("age")} required type="text" className="form-control" placeholder="Age" />
               <label for="floatingInput">Age</label>
             </div>
           </div>
@@ -59,7 +59,7 @@ export default ({ data }) => {
           </div>
           <div className="col-md-6 text-center">
             <div class="form-floating mb-3">
-              <input {...form.register("color")} type="text" className="form-control" placeholder="Colour" />
+              <input {...form.register("color")} required type="text" className="form-control" placeholder="Colour" />
               <label for="floatingInput">Color</label>
             </div>
           </div>
@@ -76,7 +76,7 @@ export default ({ data }) => {
           </div>
           <div className="col-md-6 text-center">
             <div class="form-floating mb-3">
-              <input {...form.register("price")} type="text" className="form-control" placeholder="price" />
+              <input {...form.register("price")} required type="text" className="form-control" placeholder="price" />
               <label for="floatingInput">Price</label>
             </div>
           </div>
@@ -95,7 +95,7 @@ export default ({ data }) => {
           <div className="col-md-12">
             <h5>Upload Picture</h5>
             <div class="form-floating mb-3">
-              <textarea {...form.register("picture")} className="form-control py-2 fs-5" />
+              <textarea {...form.register("picture")} required className="form-control py-2 fs-5" />
             </div>
           </div>
         </div>
@@ -105,13 +105,13 @@ export default ({ data }) => {
           <h5>Seller Details</h5>
           <div className="col-md-6">
             <div class="form-floating mb-3">
-              <input {...form.register("name")} type="text" className="form-control" placeholder="name@example.com" />
+              <input {...form.register("name")} required type="text" className="form-control" placeholder="name@example.com" />
               <label for="floatingInput">Name</label>
             </div>
           </div>
           <div className="col-md-6 text-center">
             <div class="form-floating mb-3">
-              <input {...form.register("phone")} type="text" className="form-control" placeholder="name@example.com" />
+              <input {...form.register("phone")} required type="text" className="form-control" placeholder="name@example.com" />
               <label for="floatingInput">Phone</label>
             </div>
           </div>
@@ -120,7 +120,7 @@ export default ({ data }) => {
         <div className="row mb-4">
           <div className="col-md-6">
             <div class="form-floating mb-3">
-              <input {...form.register("city")} type="text" className="form-control" placeholder="name@example.com" />
+              <input {...form.register("city")} required type="text" className="form-control" placeholder="name@example.com" />
               <label for="floatingInput">City</label>
             </div>
           </div>
